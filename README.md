@@ -1,10 +1,3 @@
-Project's Title
-Project Description
-How to run the project(Include all dependencies)
-The internal working of your project (Try to explain the theory of your project in this part)
-Your learning takeaways from the project
-The  resources/references you used while working on the project
-
 # URL-Shortener
 
 ## Description
@@ -30,9 +23,22 @@ Finally, type :
 
 ## Working Of the project 
 
+I have used Node.js as basic Server and Express.js as the framwork on Node to work Upon.
+I have used Mongoose as my database Query handler and have used MongoDB Atlas as my Database.
+I have Used EJS as my View Engine and have used Boostrap To Make a basic , clean UI/UX.
+I have Used Passport.js for handling authentication.
+The app saves The newly entered Link along with title in a model where it is preassigned a unique short code which essentially is the shortened URL.
+If the link is previously shortened, it doesn't Create any new link. while the user is not signed in, the email field in the model remains empty.
+Once the user tries to log in, the app fetches user's detalis from Google, checks if the user is already present or not if not, adds them to the database. After verifying/ adding, a session is created and a cookie containing the User's databse id is stored in the browser of the user.
+The cookie's life is 1 day. after logging in, the user can always create, visit and Delete thier URLs. After logging out, Thier session is over.
+At every point if the authenticated URL is entered in some new browser, it'll always ensure whether the user is signed in or not. if not it again prompts the user to log in via Google. Also, there is a counter attached to every shortened URL. User can see how many times the Shortened URl is pressed.
+
+
 ## Takeaways
+Through this project, i learnt Google authentication, about sessions and cookies, Passport.js, and various queries in Databse handling.
 
 ## Resources and References  
-
-## Getting Started with Create React App
-
+Bootstrap Documentation : https://getbootstrap.com/docs/5.3/examples/
+Google Authentication Using Passport : https://www.youtube.com/watch?v=sakQbeRjgwg&list=PL4cUxeGkcC9jdm7QX143aMLAqyM-jTZ2x&index=1
+Creating a basic URL-Shortener : https://www.youtube.com/watch?v=SLpUKAGnm-g&t=1061s
+Making a BLoggy Website : https://medium.com/@rajatdhoot/learn-build-a-mern-stack-application-in-100-hours-part-1-ee56e3f61979
