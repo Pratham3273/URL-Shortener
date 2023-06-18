@@ -39,6 +39,9 @@ Through this project, i learnt Google authentication, about sessions and cookies
 
 ## Resources and References  
 Bootstrap Documentation : https://getbootstrap.com/docs/5.3/examples/
+
 Google Authentication Using Passport : https://www.youtube.com/watch?v=sakQbeRjgwg&list=PL4cUxeGkcC9jdm7QX143aMLAqyM-jTZ2x&index=1
+
 Creating a basic URL-Shortener : https://www.youtube.com/watch?v=SLpUKAGnm-g&t=1061s
+
 Making a BLoggy Website : https://medium.com/@rajatdhoot/learn-build-a-mern-stack-application-in-100-hours-part-1-ee56e3f61979
