@@ -47,7 +47,7 @@ app.use('/access',accessRoutes);
 //create home route
 app.get('/',async function(req,res){
     try {
-        const shortUrls = await shortUrl.find();
+        const shortUrls = await shortUrl.find({ email: { $exists: false } });
         res.render('home', { shortUrls : shortUrls });
       } catch (error) {
         console.error('Error retrieving short URLs:', error);
