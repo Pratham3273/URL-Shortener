@@ -18,6 +18,8 @@ First clone this repository by typing this in command line :
 Next, install all dependencies using :
 ### `npm i`
 
+Next, make a new dotenv file in the root directory and place relevant keys (Google auth credentials, Mongoose credentials) in it.
+
 Finally, type : 
 ### `npm start`
 
